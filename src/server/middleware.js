@@ -8,9 +8,6 @@ import { fileURLToPath } from "url"
 // The express-rate-limit module allows us to add rate limiting to requests
 import express_rate_limit from "express-rate-limit"
 
-//This function ensures the correct decodings of percent-encoded characters as well as ensuring a **cross-platform** valid absolute path string
-import { fileURLToPath } from "url"
-
 // Creates variables for this file and directory
 const this_file = fileURLToPath(import.meta.url)
 const this_directory = dirname(this_file)
