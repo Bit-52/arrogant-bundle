@@ -20,19 +20,39 @@
 
 
 .body{
+    width:100%;
+    background-color: var(--raisin-black);
+}
+
+.app-content{
+    width:80%;
     display:flex;
     flex-direction: column;
+    margin: 0 auto;
+
 }
 
 /* for dev purposes to display flex areas */
 .ctn{
     border: 1px solid rgb(116, 114, 114);
-    width:100%;
+    /* width:100%; */
 }
 
 .nav{
     background-color: var(--onyx);
     color: white;
+    height:50px;
+    top:0;
+    position:sticky;
+    z-index:200;
+}
+.charity-nav{
+    background-color: var(--onyx);
+    color: white;
+    height:50px;
+    top:0;
+    position:sticky;
+    z-index:300;
 }
 
 #banner {
@@ -56,4 +76,20 @@
 .hero{
     background-color: var(--raisin-black);
     color: white;
+    height: 681px;
+    margin:10rem;
+}
+
+.product-hero {
+    margin: 2rem auto;
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.product-description{
+    display:flex;
+    flex-flow: column nowrap;
+}
+.product-description p{
+    margin-bottom: 1rem;
 }
