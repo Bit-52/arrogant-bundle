@@ -1,12 +1,17 @@
+// TODO nav
+
 const Navbar = () => {
 
     return (
     <>
         <div className="nav ctn">
-            <h1>nav</h1>
-        </div>
-        <div className="charity-nav ctn">
-            <h1>charity-nav</h1>
+            <div className="nav-links">
+                <h1>nav links</h1>
+            </div>
+            <hr/>
+            <div className="charity-nav">
+                <h1>charity-nav</h1>
+            </div>
         </div>
     </>
 
