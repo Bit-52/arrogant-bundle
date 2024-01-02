@@ -1,4 +1,5 @@
 import Banner from "./Banner.jsx"
+import Navbar from "./NavBar.jsx"
 
 
 // TODO put the div containers into their own components
@@ -6,16 +7,9 @@ import Banner from "./Banner.jsx"
 const App = () => {
     return (
         <>
-            <div className="nav ctn">
-                    <h1>nav</h1>
-                    {/* <Nav/> */}
-                </div>
-            <div className="charity-nav ctn">
-                <h1>charity-nav</h1>
-            </div>
-            <div className="banner ctn">
-                <Banner />
-            </div>
+            <Navbar/>
+            <Banner />
+            
 
             <div className='body ctn'>
                 <h1>body</h1>
@@ -79,12 +73,14 @@ const App = () => {
                         Supported Languages: Dutch, English, French, German, Italian, Japanese, Korean, Simplified Chinese, Spanish, and Traditional Chinese
                         </div>
                     </div>
-                    <div className='footer ctn'>
-                        <h1>footer</h1>
-                    </div>
 
                 </div> {/* end app-content ctn */}
             </div> {/* end body ctn */}
+            <div className='footer ctn'>
+                <h1>footer</h1>
+                <p>Humble, about, trending games, language selection, socials, copyright, terms of service, legals</p>
+                <p>© 2011-2022 Humble Bundle, Inc. a Ziff Davis company. All Rights Reserved. Humble Bundle and Humble Store are registered trademarks of Humble Bundle, Inc. and may not be used by third parties without express written permission.</p>
+            </div>
         </>
     )
 }
