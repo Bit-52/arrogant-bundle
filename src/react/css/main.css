@@ -16,8 +16,9 @@
     box-sizing: border-box;
 }
 
-
-
+h1{
+    color: var(--french-gray)
+}
 
 .body{
     width:100%;
