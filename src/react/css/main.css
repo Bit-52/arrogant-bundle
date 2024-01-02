@@ -21,3 +21,8 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+#reviews-container {
+    display: flex;
+    justify-content: space-evenly;
+}
