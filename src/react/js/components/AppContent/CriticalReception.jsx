@@ -2,6 +2,7 @@ import CriticalReceptionCommentItem from "./CriticalReceptionCommentItem.jsx"
 import CriticalReceptionStarsItem from "./CriticalReceptionStarsItem.jsx"
 import CriticalReceptionAuthorItem from "./CriticalReceptionAuthorItem.jsx"
 
+
 const CriticalReception = ({ criticalReceptions }) => {
 
     return (
