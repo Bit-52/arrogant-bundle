@@ -6,7 +6,7 @@
     --raisin-black: #252830ff;
     --eerie-black: #191B19ff;
     --jet: #2A2B29ff;
-    --french-gray: #D0D3D9ff;
+    --french-gray: #d0d3d9;
     --onyx: #363942ff;
     --gold: #ef9943;
 }
@@ -118,7 +118,16 @@ h1 {
 
 .product-description {
     background-color: var(--french-gray);
-    padding-top: 35px;
+    padding: 35px;
+    line-height: 1.35;
+}
+
+.product-description p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .product-description-content {
@@ -135,10 +144,9 @@ h1 {
     margin: 6px 0;
 }
 
-.product-description p {
-    margin-bottom: 1rem;
+.js-admin-edit {
+    padding-bottom: 15px;
 }
-
 .product-description strong {
     font-style: bold;
 }
@@ -153,36 +161,41 @@ h1 {
     margin-bottom: 15px;
     text-transform: uppercase;
     white-space: normal;
+    font-size: 16px;
+}
+
+.property-view {
+    position: relative;
 }
 
 .property-view.expandable.collapsed .property-content {
     max-height: 150px;
-}
 
-.toggle-container {
-    position: relative;
-    width: 100%;
-}
-
-.toggle-div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding-bottom: 35px;
-    background: linear-gradient(to top, var(--french-gray));
-    z-index: 1;
 }
 
 .property-content {
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
+    
 }
 
-/* Adjust the margin-bottom based on your design */
-.js-property-content.property-content p {
-    margin-bottom: 0;
+.property-content.collapsed {
+    mask-image: linear-gradient(to top, transparent 0%, var(--french-gray) 20%);
+}
+
+.toggle-div.collapsed {
+    position: absolute;
+    background-image: linear-gradient(to bottom, transparent, var(--french-gray) 90%);
+    mask-image: linear-gradient(to bottom, transparent 0%, var(--french-gray) 20%);
+}
+.toggle-div {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--french-gray);
+    z-index: 1;
 }
 
 .property-view.expandable.collapsed .read-more-toggle {
@@ -203,11 +216,6 @@ h1 {
 
 .property-view.expandable .show-less-toggle .arrowflipped {
     transform: rotate(180deg);
-}
-
-.property-view.expandable a {
-    background-color: transparent;
-
 }
 
 .read-more-toggle, .show-less-toggle {
