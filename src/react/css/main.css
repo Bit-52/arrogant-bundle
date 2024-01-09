@@ -117,18 +117,102 @@ h1 {
 }
 
 .product-description {
-    display: flex;
-    flex-flow: column nowrap;
     background-color: var(--french-gray);
+    padding-top: 35px;
 }
 
 .product-description-content {
     max-width: 1140px;
     margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.column-view.full {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 6px 0;
 }
 
 .product-description p {
     margin-bottom: 1rem;
+}
+
+.product-description strong {
+    font-style: bold;
+}
+
+.product-description em {
+    font-style: italic;
+}
+
+.property-title {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+.property-view.expandable.collapsed .property-content {
+    max-height: 150px;
+}
+
+.toggle-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 35px;
+    background: linear-gradient(to top, var(--french-gray));
+    z-index: 1;
+}
+
+.property-content {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Adjust the margin-bottom based on your design */
+.js-property-content.property-content p {
+    margin-bottom: 0;
+}
+
+.property-view.expandable.collapsed .read-more-toggle {
+    display: inline;
+}
+
+.property-view.expandable .read-more-toggle {
+    display: none;
+}
+
+.property-view.expandable.collapsed .show-less-toggle {
+    display: none;
+}
+
+.property-view.expandable .show-less-toggle {
+    display: inline;
+}
+
+.property-view.expandable .show-less-toggle .arrowflipped {
+    transform: rotate(180deg);
+}
+
+.property-view.expandable a {
+    background-color: transparent;
+
+}
+
+.read-more-toggle, .show-less-toggle {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .critical-reception-background {
@@ -382,3 +466,4 @@ h1 {
     max-width: 93.75rem;
     margin: 0 auto;
 }
+
